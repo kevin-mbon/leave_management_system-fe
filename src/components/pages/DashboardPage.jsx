@@ -17,7 +17,7 @@ const DashboardPage = () => {
 
   useEffect(() => {
     const user = getUser();
-    // Fetch analytics data when the component mounts or date changes
+    // Fetch all analytics data when the component mounts or date change
     const fetchAnalytics = async () => {
       try {
         const response = await makeAuthenticatedRequest(
